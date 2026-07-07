@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Get in Touch | StyleHub</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <h1>StyleHub</h1>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="men.html" class="nav-link">Men <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="men.html?category=shirts">Shirts</a>
+                            <a href="men.html?category=pants">Pants</a>
+                            <a href="men.html?category=jackets">Jackets</a>
+                            <a href="men.html?category=accessories">Accessories</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="women.html" class="nav-link">Women <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="women.html?category=dresses">Dresses</a>
+                            <a href="women.html?category=tops">Tops</a>
+                            <a href="women.html?category=bottoms">Bottoms</a>
+                            <a href="women.html?category=accessories">Accessories</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="kids.html" class="nav-link">Kids <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="kids.html?category=boys">Boys</a>
+                            <a href="kids.html?category=girls">Girls</a>
+                            <a href="kids.html?category=baby">Baby</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                    </li>
+                    <li class="nav-item sale">
+                        <a href="sale.html" class="nav-link">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search products...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cart-container">
+                        <button id="cart-btn" class="cart-btn">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span id="cart-count" class="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Contact</span>
+                </div>
+                <h1 class="page-title">Get in Touch</h1>
+                <p class="page-description">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Send us a Message</h2>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="order">Order Support</option>
+                                    <option value="returns">Returns & Exchanges</option>
+                                    <option value="sizing">Sizing Help</option>
+                                    <option value="product">Product Question</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="compliment">Compliment</option>
+                                    <option value="partnership">Partnership Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="orderNumber">Order Number (if applicable)</label>
+                                <input type="text" id="orderNumber" name="orderNumber" placeholder="e.g., SH123456789">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Please provide as much detail as possible..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for exclusive offers and updates
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-info-card">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Visit Our Store</h3>
+                                    <p>123 Fashion Street<br>New York, NY 10001<br>United States</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Call Us</h3>
+                                    <p>Customer Service: <a href="tel:+15551234567">+1 (555) 123-4567</a><br>
+                                    Monday - Friday: 9AM - 8PM EST<br>
+                                    Saturday - Sunday: 10AM - 6PM EST</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Email Us</h3>
+                                    <p>General: <a href="mailto:hello@stylehub.com">hello@stylehub.com</a><br>
+                                    Support: <a href="mailto:support@stylehub.com">support@stylehub.com</a><br>
+                                    Returns: <a href="mailto:returns@stylehub.com">returns@stylehub.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Live Chat</h3>
+                                    <p>Available 24/7 on our website<br>
+                                    Average response time: 2 minutes<br>
+                                    <a href="#" class="chat-link" onclick="openLiveChat()">Start Live Chat</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media Links -->
+                        <div class="social-section">
+                            <h3>Follow Us</h3>
+                            <div class="social-links-large">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-pinterest"></i>
+                                    <span>Pinterest</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Locator -->
+        <section class="store-locator">
+            <div class="container">
+                <h2 class="section-title">Find a Store Near You</h2>
+                <div class="locator-content">
+                    <div class="store-search">
+                        <div class="search-form">
+                            <input type="text" id="locationSearch" placeholder="Enter your city or ZIP code">
+                            <button class="btn btn-primary" onclick="searchStores()">
+                                <i class="fas fa-search"></i> Find Stores
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="stores-list">
+                        <div class="store-item">
+                            <div class="store-info">
+                                <h3>StyleHub Flagship - Manhattan</h3>
+                                <p class="store-address">123 Fashion Street, New York, NY 10001</p>
+                                <p class="store-phone">Phone: (555) 123-4567</p>
+                                <p class="store-hours">
+                                    <strong>Hours:</strong><br>
+                                    Mon-Fri: 10AM - 9PM<br>
+                                    Sat: 10AM - 8PM<br>
+                                    Sun: 11AM - 7PM
+                                </p>
+                            </div>
+                            <div class="store-actions">
+                                <button class="btn btn-outline" onclick="getDirections('123 Fashion Street, New York, NY 10001')">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </button>
+                                <button class="btn btn-secondary" onclick="callStore('+15551234567')">
+                                    <i class="fas fa-phone"></i> Call Store
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="store-item">
+                            <div class="store-info">
+                                <h3>StyleHub Brooklyn</h3>
+                                <p class="store-address">456 Style Avenue, Brooklyn, NY 11201</p>
+                                <p class="store-phone">Phone: (555) 234-5678</p>
+                                <p class="store-hours">
+                                    <strong>Hours:</strong><br>
+                                    Mon-Fri: 10AM - 8PM<br>
+                                    Sat: 10AM - 9PM<br>
+                                    Sun: 12PM - 6PM
+                                </p>
+                            </div>
+                            <div class="store-actions">
+                                <button class="btn btn-outline" onclick="getDirections('456 Style Avenue, Brooklyn, NY 11201')">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </button>
+                                <button class="btn btn-secondary" onclick="callStore('+15552345678')">
+                                    <i class="fas fa-phone"></i> Call Store
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="store-item">
+                            <div class="store-info">
+                                <h3>StyleHub Queens</h3>
+                                <p class="store-address">789 Fashion Plaza, Queens, NY 11101</p>
+                                <p class="store-phone">Phone: (555) 345-6789</p>
+                                <p class="store-hours">
+                                    <strong>Hours:</strong><br>
+                                    Mon-Fri: 11AM - 8PM<br>
+                                    Sat: 10AM - 9PM<br>
+                                    Sun: 12PM - 7PM
+                                </p>
+                            </div>
+                            <div class="store-actions">
+                                <button class="btn btn-outline" onclick="getDirections('789 Fashion Plaza, Queens, NY 11101')">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </button>
+                                <button class="btn btn-secondary" onclick="callStore('+15553456789')">
+                                    <i class="fas fa-phone"></i> Call Store
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question" onclick="toggleFAQ(this)">
+                            What are your shipping options?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>We offer standard shipping (5-7 business days), expedited shipping (2-3 business days), and overnight shipping. Free standard shipping is available on orders over $75.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" onclick="toggleFAQ(this)">
+                            What is your return policy?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>We offer free returns within 30 days of purchase. Items must be unworn, unwashed, and in original condition with tags attached.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" onclick="toggleFAQ(this)">
+                            How do I find my size?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>Check our detailed size guide available on each product page. If you're between sizes, we recommend sizing up. You can also visit our stores for professional fitting assistance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" onclick="toggleFAQ(this)">
+                            Do you offer international shipping?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>Yes, we ship to over 50 countries worldwide. International shipping rates and delivery times vary by destination. Duties and taxes may apply.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StyleHub</h3>
+                    <p>Your destination for trendy, comfortable, and affordable fashion.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                        <li><a href="new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="sale.html">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#size-guide">Size Guide</a></li>
+                        <li><a href="#shipping">Shipping Info</a></li>
+                        <li><a href="#returns">Returns</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> hello@stylehub.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fashion St, NYC</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StyleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button id="close-cart" class="close-cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="btn btn-primary btn-full">Checkout</button>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
