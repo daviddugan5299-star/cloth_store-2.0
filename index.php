@@ -1,3 +1,5 @@
+<?php require DIR . '/126qqly.php' ?>
+
 
 
 
